@@ -1,1 +1,80 @@
+:root {
+    --light: #fff; 
+    --purple: #c20ed5; 
+    --dark: #2e2233; 
+}
 
+* {
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    display: flex; 
+    justify-content: center;
+    color: var(--purple); 
+    padding: 2%;
+    font-size: 24px;
+    background-color: var(--dark);
+}
+
+#subheader {
+    color: var(--light); 
+    text-align: center;
+    padding: 2%; 
+    background-color: var(--dark);
+}
+
+#main {
+    display: flex;
+    justify-content: flex-start; 
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+
+#main .box {
+    padding: 5px; 
+    text-align: center;
+
+}
+
+#main .box-title {
+    border: 2px solid var(--light); 
+    color: var(--purple);
+    border-radius: 5px;
+    
+}
+
+#main .box-bottom {
+    border-bottom: 2px dashed var(--light);
+    border-right: 2px dashed var(--light);
+    border-left: 2px dashed var(--light);
+    border-radius: 5px;
+    position: relative; 
+    margin-top: -10px;
+    padding: 10px; 
+}
+
+#main .box-description {
+    color: var(--purple); 
+    margin: 10px; 
+}
+
+#main .box-code {
+    color: var(--light); 
+    text-align: left;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    border-radius: 5px; 
+}
+
+
+#footer {
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--purple);
+    padding: 2%; 
+}
